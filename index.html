@@ -1,0 +1,4116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery.js"></script>
+  <script src="steam.js"></script>
+  <link rel="stylesheet" href="steam.css">
+</head>
+
+<body>
+  <div class="global_header">
+    <div class="content">
+      <div class="logo">
+        <span class="logo_holder">
+          <a href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </span>
+      </div>
+      <div class="supernav">
+        <a class="menuitem super" href="#">
+          商店 </a>
+        <a class="menuitem super" href="#">
+          社区 </a>
+        <a class="menuitem super" href="#">
+          关于 </a>
+        <a class="menuitem super" href="#">
+          客服 </a>
+        <div class="supernav_content1 supernav_content" style="display: none;">
+          <div class="submenu_store">
+            <a class="submenuitem" href="#">精选</a>
+            <br>
+            <a class="submenuitem" href="#">探索</a>
+            <br>
+            <a class="submenuitem" href="#">鉴赏家</a>
+            <br>
+            <a class="submenuitem" href="#">愿望单</a>
+            <br>
+            <a class="submenuitem" href="#">新闻</a>
+            <br>
+            <a class="submenuitem" href="#">统计</a>
+            <br>
+          </div>
+        </div>
+        <div class="supernav_content2 supernav_content" style="display: none;">
+          <div class="submenu_store">
+            <a class="submenuitem" href="#">主页</a>
+            <br>
+            <a class="submenuitem" href="#">讨论</a>
+            <br>
+            <a class="submenuitem" href="#">创意工坊</a>
+            <br>
+            <a class="submenuitem" href="#">市场</a>
+            <br>
+            <a class="submenuitem" href="#">实况直播</a>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="global_actions">
+        <div class="global_action_menu">
+          <div class="green_btn">
+            <a href="" class="green_btn_content">安装 Steam</a>
+          </div>
+          <a href="" class="login">登录</a>
+          |
+          <span class="language">
+            <a href="#">语言</a>
+          </span>
+          <div class="language_dropdown">
+            <div class="language_body">
+
+              <a class="popup_item" href="#">български（保加利亚语）</a>
+              <a class="popup_item" href="#">čeština（捷克语）</a>
+              <a class="popup_item" href="#">Dansk（丹麦语）</a>
+              <a class="popup_item" href="#">Nederlands（荷兰语）</a>
+              <a class="popup_item" href="#">English（英语）</a>
+              <a class="popup_item" href="#">Suomi（芬兰语）</a>
+              <a class="popup_item" href="#">Français（法语）</a>
+              <a class="popup_item" href="#">Ελληνικά（希腊语）</a>
+              <a class="popup_item" href="#">Deutsch（德语）</a>
+              <a class="popup_item" href="#">Magyar（匈牙利语）</a>
+              <a class="popup_item" href="#">Italiano（意大利语）</a>
+              <a class="popup_item" href="#">日本語（日语）</a>
+              <a class="popup_item" href="#">한국어（韩语）</a>
+              <a class="popup_item" href="#">Norsk（挪威语）</a>
+              <a class="popup_item" href="#">Polski（波兰语）</a>
+              <a class="popup_item" href="#">Português（葡萄牙语）</a>
+              <a class="popup_item" href="#">Português-Brasil（葡萄牙语-巴西）</a>
+              <a class="popup_item" href="#">Русский（俄语）</a>
+              <a class="popup_item" href="#">Română（罗马尼亚语）</a>
+              <a class="popup_item" href="#">Español（西班牙语）</a>
+              <a class="popup_item" href="#">Svenska（瑞典语）</a>
+              <a class="popup_item" href="#">繁體中文（繁体中文）</a>
+              <a class="popup_item" href="#">ไทย（泰语）</a>
+              <a class="popup_item" href="#">Türkçe（土耳其语）</a>
+              <a class="popup_item" href="#">Українська（乌克兰语）</a>
+              <a class="popup_item" href="#" target="_blank">帮助我们翻译 Steam</a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home_page_body">
+    <div class="game_bgc">
+      <img src="img/page_bg_schinese.jpg" alt="">
+    </div>
+  </div>
+  <div class="home_page_content">
+    <div class="home_page_gutter"></div>
+    <div class="search_nav">
+      <div class="search_inner">
+        <div class="store_nav">
+          <div class="for_you_store tab">
+            <span class="pulldown">
+              <a class="pulldown_lnk" href="">您的商店</a>
+              <span class="pointdown"></span>
+            </span>
+          </div>
+          <div class="for_you_sildedown">
+            <div class="body_sildedown" style="width: 110px;">
+              <a class="body_sildedown_item" href="#">商店主页</a>
+              <div class="hr"></div>
+              <a class="body_sildedown_item" href="#">最近看过的</a>
+              <a class="body_sildedown_item" href="#">鉴赏家</a>
+              <a class="body_sildedown_item" href="#">最近更新 </a>
+            </div>
+          </div>
+          <div class="game_tab tab">
+            <span class="pulldown">
+              <a class="pulldown_lnk" href="">游戏</a>
+              <span class="pointdown"></span>
+            </span>
+          </div>
+          <div class="game_tab_sildedown">
+            <div class="body_sildedown">
+              <a class="body_sildedown_item" href="#">免费游玩</a>
+              <a class="body_sildedown_item" href="#">抢先体验</a>
+              <a class="body_sildedown_item" href="#">试玩</a>
+              <a class="body_sildedown_item" href="#">虚拟现实 </a>
+              <a class="body_sildedown_item" href="#">支持steam控制器 </a>
+              <div class="hr"></div>
+              <div class="blue_font">按类型浏览:</div>
+              <a class="body_sildedown_item" href="#">休闲 </a>
+              <a class="body_sildedown_item" href="#">体育 </a>
+              <a class="body_sildedown_item" href="#">冒险 </a>
+              <a class="body_sildedown_item" href="#">动作 </a>
+              <a class="body_sildedown_item" href="#">大型多人在线 </a>
+              <a class="body_sildedown_item" href="#">模拟 </a>
+              <a class="body_sildedown_item" href="#">独立 </a>
+              <a class="body_sildedown_item" href="#">竞速 </a>
+              <a class="body_sildedown_item" href="#">策略 </a>
+              <a class="body_sildedown_item" href="#">角色扮演 </a>
+              <div class="hr"></div>
+              <a class="body_sildedown_item" href="#">查看热门标签 </a>
+              <div class="hr"></div>
+              <div class="blue_font">按平台浏览:</div>
+              <a class="body_sildedown_item" href="#">Mac OS X </a>
+              <a class="body_sildedown_item" href="#">SteamOS + Linux </a>
+
+
+
+
+            </div>
+          </div>
+          <div class="soft_ware tab">
+            <span class="pulldown">
+              <a class="pulldown_lnk" href="">软件</a>
+              <span class="pointdown"></span>
+            </span>
+          </div>
+          <div class="soft_ware_sildedown">
+            <div class="body_sildedown">
+              <a class="body_sildedown_item" href="#">软件中心</a>
+              <div class="hr"></div>
+              <a class="body_sildedown_item" href="#">动画制作與建模</a>
+              <a class="body_sildedown_item" href="#">实用工具</a>
+              <a class="body_sildedown_item" href="#">教育</a>
+              <a class="body_sildedown_item" href="#">游戏开发</a>
+              <a class="body_sildedown_item" href="#">照片编辑</a>
+              <a class="body_sildedown_item" href="#">网络出版</a>
+              <a class="body_sildedown_item" href="#">视频制作</a>
+              <a class="body_sildedown_item" href="#">设计与插画</a>
+              <a class="body_sildedown_item" href="#">音频制作 </a>
+
+
+            </div>
+          </div>
+          <div class="hardware tab">
+            <span class="pulldown">
+              <a class="pulldown_lnk" href="">硬件</a>
+              <span class="pointdown"></span>
+            </span>
+          </div>
+          <div class="hardware_sildedown">
+            <div class="body_sildedown">
+              <a class="body_sildedown_item" href="#">Steam 控制器</a>
+              <a class="body_sildedown_item" href="#">Steam 流式盒</a>
+              <a class="body_sildedown_item" href="#">HTC Vive </a>
+
+            </div>
+          </div>
+          <div class="videos tab">
+            <span class="pulldown">
+              <a class="pulldown_lnk" href="">视频</a>
+              <span class="pointdown"></span>
+            </span>
+          </div>
+          <div class="videos_sildedown">
+            <div class="body_sildedown">
+              <a class="body_sildedown_item" href="#">视频中心</a>
+              <div class="hr"></div>
+              <div class="blue_font">按类型浏览:</div>
+              <a class="body_sildedown_item" href="#">电影</a>
+              <a class="body_sildedown_item" href="#">剧集</a>
+              <a class="body_sildedown_item" href="#">纪录片</a>
+              <a class="body_sildedown_item" href="#">游戏</a>
+              <a class="body_sildedown_item" href="#">教程</a>
+              <a class="body_sildedown_item" href="#">短片 </a>
+              <div class="hr"></div>
+              <div class="blue_font">按类型浏览:</div>
+              <a class="body_sildedown_item" href="#">动作</a>
+              <a class="body_sildedown_item" href="#">日本动画</a>
+              <a class="body_sildedown_item" href="#">欢乐</a>
+              <a class="body_sildedown_item" href="#">剧情</a>
+              <a class="body_sildedown_item" href="#">恐怖</a>
+              <a class="body_sildedown_item" href="#">科幻 </a>
+            </div>
+          </div>
+          <a class="news tab" href="">新闻</a>
+          <div class="search_area ">
+            <div class="search_box">
+              <input type="text" id="key" value="搜索商店">
+              <a href="#" class="box_submit">
+                <img src="" alt="">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar_body">
+        <div class="sidebar_body_page">
+          <div class="sidebar_header">
+            <a href="#">
+              <img src="img/sidebar_header_img.png" alt="" width="210">
+            </a>
+            <br> 礼品卡
+          </div>
+          <div class="sidebar_items">
+            <a href="#" class="sidebar_item_lnk space ">现已在 steam 上推出</a>
+          </div>
+          <div class="sidebar_header">推荐</div>
+          <div class="sidebar_items">
+            <a class="sidebar_item_lnk" href="#">
+              <span class="icon friends"></span>
+              由好友推荐
+            </a>
+            <a class="sidebar_item_lnk" href="#">
+              <span class="icon curators"></span>
+              由鉴赏家推荐
+            </a>
+            <a class="sidebar_item_lnk" href="#">
+              <span class="icon tags"></span>
+              标签
+            </a>
+          </div>
+          <div class="sidebar_header">探索队列</div>
+          <div class="sidebar_items">
+            <a class="sidebar_item_lnk" href="#">
+              <span class="icon queue"></span>
+              推荐
+            </a>
+            <a class="sidebar_item_lnk" href="#">
+              <span class="icon queue_new"></span>
+              新品
+            </a>
+          </div>
+          <div class="sidebar_header">浏览分类</div>
+          <div class="sidebar_items">
+            <a href="#" class="sidebar_item_lnk">
+
+              <span class="icon top_sellers"></span>热销产品
+            </a>
+            <a href="#" class="sidebar_item_lnk">
+
+              <span class="icon updated"></span>最近更新
+            </a>
+            <a href="#" class="sidebar_item_lnk">
+
+              <span class="icon recent"></span> 新品
+            </a>
+            <a href="#" class="sidebar_item_lnk">
+
+              <span class="icon upcoming"></span>即将推出
+            </a>
+            <a href="#" class="sidebar_item_lnk">
+
+              <span class="icon discounts"></span>优惠
+            </a>
+            <a href="#" class="sidebar_item_lnk">
+
+              <span class="icon vr"></span>虚拟现实
+            </a>
+            <a href="#" class="sidebar_item_lnk">
+
+              <span class="icon controller"></span>支持steam控制器
+            </a>
+          </div>
+          <div class="sidebar_header" style="margin-top: 10px;">按类型浏览</div>
+          <div class="sidebar_items">
+            <a href="#" class="sidebar_item_lnk">免费游玩</a>
+            <a href="#" class="sidebar_item_lnk">抢先体验</a>
+            <a href="#" class="sidebar_item_lnk">休闲</a>
+            <a href="#" class="sidebar_item_lnk">体育</a>
+            <a href="#" class="sidebar_item_lnk">冒险</a>
+            <a href="#" class="sidebar_item_lnk">动作</a>
+            <a href="#" class="sidebar_item_lnk">大型多人在线</a>
+            <a href="#" class="sidebar_item_lnk">模拟</a>
+            <a href="#" class="sidebar_item_lnk">独立</a>
+            <a href="#" class="sidebar_item_lnk">竞速</a>
+            <a href="#" class="sidebar_item_lnk">策略</a>
+            <a href="#" class="sidebar_item_lnk">角色扮演</a>
+          </div>
+          <div class="sidebar_header">最近浏览</div>
+          <div class="sidebar_items">
+            <a class="sidebar_item_lnk" href="#">Tom Clancy's Rainbow Six® Siege</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content_bd">
+    <div class="banner">
+      <div class="banner_inner">
+        <h2>精选和推荐</h2>
+        <div class="banner_inner_content">
+          <div class="effect">
+          </div>
+          <div class="banner_items">
+            <a class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/Tom_Clancys_Ghost_Recon/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/Tom_Clancys_Ghost_Recon/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/Tom_Clancys_Ghost_Recon/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/Tom_Clancys_Ghost_Recon/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>Tom Clancy's Ghost Recon® Wildlands</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/Tom_Clancys_Ghost_Recon/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/Tom_Clancys_Ghost_Recon/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/Tom_Clancys_Ghost_Recon/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="default_price">¥ 248</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/R6/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/R6/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/R6/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/R6/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/R6/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>Tom Clancy's Rainbow Six® Siege</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/R6/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/R6/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/R6/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/R6/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="default_price">¥ 248</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/ARK/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/ARK/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/ARK/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/ARK/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/ARK/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>ARK: Survival Evolved Season Pass</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/ARK/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/ARK/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/ARK/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/ARK/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="default_price">¥ 248</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/4PUBG/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/4PUBG/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/4PUBG/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/4PUBG/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/4PUBG/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>PLAYERUNKNOWN'S BATTLEGROUNDS</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/4PUBG/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/4PUBG/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/4PUBG/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/4PUBG/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="default_price">¥ 99</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/5DEADBYDALIGHT/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/5DEADBYDALIGHT/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/5DEADBYDALIGHT/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/5DEADBYDALIGHT/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/5DEADBYDALIGHT/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>Dead by Daylight</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/5DEADBYDALIGHT/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/5DEADBYDALIGHT/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/5DEADBYDALIGHT/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/5DEADBYDALIGHT/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="discount">-60%</div>
+                  <div class="default_price delete_font">¥ 88</div>
+                  <div class="final_price">¥ 35</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/5WRECKFEST/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/5WRECKFEST/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/5WRECKFEST/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/5WRECKFEST/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/5WRECKFEST/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>Wreckfest</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/5WRECKFEST/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/5WRECKFEST/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/5WRECKFEST/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/5WRECKFEST/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="default_price">¥ 135</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/7nba2k18/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/7nba2k18/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/7nba2k18/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/7nba2k18/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/7nba2k18/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>NBA 2K18</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/7nba2k18/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/7nba2k18/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/7nba2k18/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/7nba2k18/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="default_price">¥ 199</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/8football/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/8football/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/8football/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/8football/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/8football/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>Football Manager 2018</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/8football/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/8football/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/8football/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/8football/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="discount">-60%</div>
+                  <div class="default_price delete_font">¥ 199</div>
+                  <div class="final_price">¥ 68</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/9GTA5/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/9GTA5/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/9GTA5/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/9GTA5/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/9GTA5/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>Grand Theft Auto V</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/9GTA5/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/9GTA5/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/9GTA5/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/9GTA5/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+                  <div class="discount">-50%</div>
+                  <div class="default_price delete_font">¥ 189</div>
+                  <div class="final_price">¥ 98</div>
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/10THEEVILWITHIN/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/10THEEVILWITHIN/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/10THEEVILWITHIN/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/10THEEVILWITHIN/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/10THEEVILWITHIN/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>The Evil Within</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/10THEEVILWITHIN/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/10THEEVILWITHIN/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/10THEEVILWITHIN/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/10THEEVILWITHIN/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">现已推出</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+
+                  <div class="default_price ">¥ 79</div>
+
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+            <a style="display: none;" class="banner_item" href="#">
+              <div class="banner_image_interface">
+                <div class="screenshot">
+                  <img src="img/gameimg/11/1.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/11/2.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/11/3.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/11/4.jpg" alt="">
+                </div>
+                <div class="screenshot" style="display: none;">
+                  <img width="616" height="353" src="img/gameimg/11/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <div>Insurgency: Sandstorm</div>
+                </div>
+                <div class="screenshots">
+                  <div>
+                    <img src="img/gameimg/11/2.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/11/3.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/11/4.jpg" width="169" height="95" alt=""> </div>
+                  <div>
+                    <img src="img/gameimg/11/5.jpg" width="169" height="95" alt=""> </div>
+                </div>
+                <div class="reason">
+                  <div class="main_default">立即预购</div>
+                  <div class="hot">
+                    <div>热销产品</div>
+                  </div>
+                </div>
+                <div class="price">
+
+                  <div class="default_price ">¥ 189</div>
+
+                </div>
+                <div class="platforms">
+                  <span class="windows_platforms"></span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="arrow left">
+            <div></div>
+          </div>
+          <div class="arrow right">
+            <div></div>
+          </div>
+          <div class="banner_items_index">
+            <div class=" focus"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+            <div class="index_item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="special_offers">
+      <h2>
+        特别优惠
+        <span class="font_right">
+          <a href="#">浏览所有</a>
+        </span>
+      </h2>
+      <div class="special_inner_offers">
+        <div class="special_items">
+          <div class="special_item1">
+            <div class="special_item1_col">
+              <div class="special_item1_col_img">
+                <img src="img/special/1.jpg" alt="">
+              </div>
+              <div class="special_item1_col_content">
+                <div class="spotlight_day">特惠于周一上午 10 点止（太平洋时间）。</div>
+                <div class="spotlight_price">
+                  <div class="discount_pct">最高可省 -90%</div>
+                </div>
+              </div>
+            </div>
+            <div class="special_item1_col"></div>
+            <div></div>
+          </div>
+          <div class="special_item1">
+            <div class="special_item1_col">
+              <div class="special_item1_col_img">
+                <img src="img/special/2.jpg" alt="">
+              </div>
+              <div class="special_item1_col_content">
+                <div class="spotlight_day">特惠于周一上午 10 点止（太平洋时间）。</div>
+                <div class="spotlight_price">
+                  <div class="discount_pct">最高可省 -81%</div>
+                </div>
+              </div>
+            </div>
+            <div class="special_item1_col"></div>
+            <div></div>
+          </div>
+          <div class="special_item1">
+            <div class="special_col">
+              <img src="img/special/3.jpg" width="305" alt="">
+              <div class="special_item1_col_content compulsory">
+                <div class="special_col_discount">
+                  <div class="discount_pct">-20%</div>
+                  <div class="discount_pirce">
+                    <div class="old_price">¥ 90</div>
+                    <div class="now_price">¥ 77</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="special_col">
+              <img src="img/special/4.jpg" width="305" alt="">
+              <div class="special_item1_col_content compulsory">
+                <div class="special_col_discount">
+                  <div class="discount_pct">-80%</div>
+                  <div class="discount_pirce">
+                    <div class="old_price">¥ 158</div>
+                    <div class="now_price">¥ 23</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <div class="special_items" style="display: none;">
+          <div class="special_item1">
+            <div class="special_item1_col">
+              <div class="special_item1_col_img">
+                <img src="img/special/5.jpg" alt="">
+              </div>
+              <div class="special_item1_col_content">
+                <h2 class="be_free">免费周末试玩</h2>
+                <div class="spotlight_day">周日下午1 点（太平洋时间）之前免费玩</div>
+                <div class="special_col_discount move">
+                  <div class="discount_pct">-20%</div>
+                  <div class="discount_pirce">
+                    <div class="old_price">¥ 88</div>
+                    <div class="now_price">¥ 35</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="special_item1_col"></div>
+            <div></div>
+          </div>
+          <div class="special_item1">
+            <div class="special_col">
+              <img src="img/special/6.jpg" width="305" alt="">
+              <div class="special_item1_col_content compulsory">
+                <div class="special_col_discount">
+                  <div class="discount_pct">-50%</div>
+                  <div class="discount_pirce">
+                    <div class="old_price">¥ 88</div>
+                    <div class="now_price">¥ 35</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="special_col">
+              <img src="img/special/7.jpg" width="305" alt="">
+              <div class="special_item1_col_content compulsory">
+                <div class="special_col_discount">
+                  <div class="discount_pct">-20%</div>
+                  <div class="discount_pirce">
+                    <div class="old_price">¥ 90</div>
+                    <div class="now_price">¥ 72</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div></div>
+          </div>
+          <div class="special_item1">
+            <div class="special_col">
+              <img src="img/special/8.jpg" width="305" alt="">
+              <div class="special_item1_col_content compulsory">
+                <div class="special_col_discount">
+                  <div class="discount_pct">-61%</div>
+                  <div class="discount_pirce">
+                    <div class="old_price">¥ 127</div>
+                    <div class="now_price">¥ 61</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="special_col">
+              <img src="img/special/9.jpg" width="305" alt="">
+              <div class="special_item1_col_content compulsory">
+                <div class="special_col_discount">
+                  <div class="discount_pct">-50%</div>
+                  <div class="discount_pirce">
+                    <div class="old_price">¥ 68</div>
+                    <div class="now_price">¥ 34</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="special_items_idx">
+          <div class="focus"></div>
+          <div></div>
+        </div>
+        <div class="arrow left_2">
+          <div></div>
+        </div>
+        <div class="arrow right_2">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map_site">
+    <h2>浏览 Steam</h2>
+    <div class="buttons">
+      <div class="map_site_btn">
+        <a class="inner_btn" href="">新品</a>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="map_site_btn">
+        <a class="inner_btn" href="">优惠</a>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="map_site_btn">
+        <a class="inner_btn" href="">免费游戏</a>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="map_site_btn">
+        <a class="inner_btn" href="">按用户标签</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="connoisseur">
+    <h2>为您建议的鉴赏家</h2>
+    <div class="connoisseur_items">
+      <div class="connoisseur_item">
+        <div class="connoisseur_item_hd">
+          <a class="float_left" href="#">
+            <img src="img/moster/1.jpg" alt="">
+          </a>
+          <div class="connoisseur_info">
+            <div class="connoisseur_name">
+              关注
+              <span>嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~</span>，获得更多类似评测！
+            </div>
+          </div>
+          <div class="attention">
+            <div>
+              <a class="attention_btn" href="#">关注</a>
+            </div>
+            <div class="followers">
+              <span>403,808</span>名关注者
+            </div>
+          </div>
+        </div>
+        <div class="connoisseur_item_bd">
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/1-1.jpg" alt="">
+              <span class="app_price">¥ 36</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              这是一个自由度很高的沙盒游戏， 它将起源引擎的潜力发挥到了极致。 放开想象， 做出你心中的作品吧 只有想不到的，没有做不到的。
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/1-2.jpg" alt="">
+              <span class="app_price">¥ 88</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              一款萌化了的3D Collect-a-thon类有着惊艳关卡设计的快乐多彩开放世界平台游戏
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/1-3.jpg" alt="">
+              <span class="app_price">¥ 99</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              总的来说，我沉迷过的很多游戏都是如此，部分熟悉的玩法加上全新的诠释， 清晰的目标、一定的策略深度带来的上瘾性，再加上 11 bit 擅长的道德困境， 这款游戏是要火
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/1-4.jpg" alt="">
+              <span class="app_price">¥ 248</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              强烈的代入感使人打开游戏就停不下来，瞬息之间就能决定胜负的冷兵器战斗使人倍感真实与干净利落。 超过40小时的主线任务能够让人回味无穷，但支线任务的数量不是很足， 各类剧情杀也十分影响玩家心情.....
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div style="display: none;" class="connoisseur_item">
+        <div class="connoisseur_item_hd">
+          <a class="float_left" href="#">
+            <img src="img/moster/2.jpg" alt="">
+          </a>
+          <div class="connoisseur_info">
+            <div class="connoisseur_name">
+              关注
+              <span>中国鉴赏家同好会</span>，获得更多类似评测！
+            </div>
+          </div>
+          <div class="attention">
+            <div>
+              <a class="attention_btn" href="#">关注</a>
+            </div>
+            <div class="followers">
+              <span>332,704</span>名关注者
+            </div>
+          </div>
+        </div>
+        <div class="connoisseur_item_bd">
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/2-1.jpg" alt="">
+
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              尽管我能欣赏这个游戏的纵情声色，也被Bug折腾的焦头烂额， 吸引我扮演吸血鬼走遍这个灯红酒绿的午夜洛杉矶的，却仍然是黑岛味的RPG之根。 作为Troika的最后一部作品，说VTMB野心过大，缺乏规划并不算过分， 但其丰富的启发意义与迸发的独特魅力，确实使之成为了当之无愧的邪典神作。
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/2-2.jpg" alt="">
+              <span class="app_price">¥ 25</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              带着Roguelike要素,却更加"Diablo"风格的一款像素游戏, 几近完美的体现了暗黑中的刷怪和探索要素!比起steam版本,目前在移动端似乎更加吃香 ,因为有大量的DLC,所以推荐在打折时再购入,游戏本身除了像素版暗黑之外,并没有更多的噱头
+              ,当然本身的素质依然值得肯定,无论是英雄build还是刷装备都能够获得不错的体验! 值得一提的是陷阱做的很棒!而且十分杀时间,也可以联机一起玩!推荐!
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/2-3.jpg" alt="">
+              <span class="app_price">¥ 70</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              作为一款由Villa Gorilla开发的横版独立冒险弹球游戏， 游戏的美术画风清新明朗（偏奥日风），背景音乐轻快舒心， 与画面效果相得益彰，较为立体地刻画了热带南方小岛Mokumana 。 本作融合了弹珠机制、平台跳跃以及开放世界等要素，但整个游戏非线性，
+              玩家可以自由选择多条任务线， 推荐爱好弹珠类游戏的朋友尝尝鲜~
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/2-4.jpg" alt="">
+              <span class="app_price">¥ 36</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              这是一款回合制策略游戏，但却有着自己独特的玩法， 同时也有着rpg机制，且有转职系统，是一款质量不错的小游戏。 不过也有着让人诟病的地方，开发者也一直在更新，推荐折扣时购买。
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div style="display: none;" class="connoisseur_item">
+        <div class="connoisseur_item_hd">
+          <a class="float_left" href="#">
+            <img src="img/moster/3.jpg" alt="">
+          </a>
+          <div class="connoisseur_info">
+            <div class="connoisseur_name">
+              关注
+              <span>中国玩家鉴赏组</span>，获得更多类似评测！
+            </div>
+          </div>
+          <div class="attention">
+            <div>
+              <a class="attention_btn" href="#">关注</a>
+            </div>
+            <div class="followers">
+              <span>168,307</span>名关注者
+            </div>
+          </div>
+        </div>
+        <div class="connoisseur_item_bd">
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/3-1.jpg" alt="">
+              <span class="app_price">¥ 66</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              这款软件的功能希望大家能通过商店页详细描述得知，其本身质量非常不错。 就依我个人而言，虽然我平时用不到，但周遭的朋友，特别是用A卡CPU的朋友玩DNF时， 用处可以说发挥的不错。 解决你CPU有力使不上劲的尴尬局面。 让你在300帧的世界里闪耀气气之息。
+              使你在绝地求生中变身为全队的大腿。 爱就勇敢买~ </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/3-2.jpg" alt="">
+              <span class="app_price">¥ 20</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              短小精悍的Roguelike游戏，融合了弹幕的元素， 道具武器十分丰富，敌人各有各的特点，操作手感也相当好， 音乐有点类似FC时代的8位音乐，虽然复古但很好听，地图上有传送点， 总体来说对新手也很友好。不过与此相对的，游戏画面比较粗糙单调，关卡偏少
+              ，这些都有待改进。 不过总体来说，确实是一款不错的Roguelike弹幕游戏，建议有兴趣的玩家尝试一下。 </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/3-3.jpg" alt="">
+              <span class="app_price">¥ 20</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              老外制作的围棋游戏，总体来说还算专业。棋盘分 7路、9路、13路、19路， 难度分四种难度，以我业余一级可能都达不到的围棋水平，中等难度随便赢， 大师难度输赢各半。游戏UI还算不错， 棋盘、棋子的设计都挺大气的，总体来说是一款适合围棋新手练练手的围棋游戏。
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/3-4.jpg" alt="">
+              <span class="app_price">¥ 68</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              一款类xcom的SRPG游戏，但区别于xcom的是， 纷争终结者的舞台更为现代，没有末日，也没有外星人， 更多的是英雄们打击犯罪的故事，如果喜欢战旗回合制的朋友们，可以推荐入手。 美中不足在于游戏设置类欧洲和亚洲服务器，但裸连情况下时不时断线，对于游戏体验有不少损害，
+              但一般情况下还是很稳定的。 游戏目前售价68， 自带官方中文，设置的是韩文语音，剧情略平淡，但很有趣。其中还有不少画风美丽的CG，推荐入手
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div style="display: none;" class="connoisseur_item">
+        <div class="connoisseur_item_hd">
+          <a class="float_left" href="#">
+            <img src="img/moster/4.jpg" alt="">
+          </a>
+          <div class="connoisseur_info">
+            <div class="connoisseur_name">
+              关注
+              <span>国人交流组【天朝】</span>，获得更多类似评测！
+            </div>
+          </div>
+          <div class="attention">
+            <div>
+              <a class="attention_btn" href="#">关注</a>
+            </div>
+            <div class="followers">
+              <span>82,632</span>名关注者
+            </div>
+          </div>
+        </div>
+        <div class="connoisseur_item_bd">
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/4-1.jpg" alt="">
+              <span class="app_price">¥ 48</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              欢迎来到罪犯的世界，你将和其他三位高智商罪犯完成一个又一个精密而又疯狂的劫案， 在他们心中钞票永远是第一，所以，拿好你手上的枪，让我们大干一场。It's Payday ！ </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/4-2.jpg" alt="">
+              <span class="app_price">¥ 32</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              阿路阿边一堆大石块 阿稀阿里哗啦满地洒 吴克背着那重重的缸呀 一步一步地往上爬 阿树阿上两只黄鹂鸟 阿嘻阿嘻哈哈在笑它 练麒麟臂还早得很哪 现在上来干什么 阿黄阿黄鹂儿不要笑 等我爬上它就练成了 </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/4-3.jpg" alt="">
+              <span class="app_price">¥ 128</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              育碧开放世界一次全新尝试，一场惊艳的芝加哥复仇之旅
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/4-4.jpg" alt="">
+              <span class="app_price">¥ 68</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              《茶杯头》则是一个致力于还原旧时代美国动画的独立游戏， 据悉仿照了以前橡皮管的风格。 作品在E3微软展台便披露头角，怀旧精致的美术和具有创意的元素设计吸引了一大批粉丝玩家。
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div style="display: none;" class="connoisseur_item">
+        <div class="connoisseur_item_hd">
+          <a class="float_left" href="#">
+            <img src="img/moster/5.jpg" alt="">
+          </a>
+          <div class="connoisseur_info">
+            <div class="connoisseur_name">
+              关注
+              <span>游戏特攻组</span>，获得更多类似评测！
+            </div>
+          </div>
+          <div class="attention">
+            <div>
+              <a class="attention_btn" href="#">关注</a>
+            </div>
+            <div class="followers">
+              <span>72,591</span>名关注者
+            </div>
+          </div>
+        </div>
+        <div class="connoisseur_item_bd">
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/5-1.jpg" alt="">
+              <span class="app_price">¥ 88</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              这款游戏，无疑是款雷作，看穿一切的朝鲜人，有趣的枪械系统， 垃圾的枪模，单机是沙盒，多人是任务模式？买箱解配件，解武器解服装， 这又是什么设定，画面一般，音效还可以。射击手感泪奔，更别说所谓的载具系统了， 开着穿人摩托飞驰，难道还要给好评吗，物理系统也是个渣，还没入正的朋友请谨慎考虑，
+              反正我是推荐你赶紧入手。
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/5-2.jpg" alt="">
+              <span class="app_price">¥ 68</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              烂，真TM烂，官方有对外挂做出行动吗？一款可以复制资源然后还大摇 大摆的在中国市场卖还你TM的封中国IP，制作商你圈钱的目标真TM容易看出来，你 的做法就是圈钱行为，让中国玩家卖帐却封中国玩家IP。真的是SB制作商，我管你什么后台， 索尼还是什么，你这样的做法令人鄙视，制作商什么态度，我就怎么评价你的垃圾。
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/5-3.jpg" alt="">
+              <span class="app_price">¥ 88</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              这一作游戏是刺客信条系列里，唯一一个反派主角，引人入胜的剧情， 经典的刺杀动画，这一作主要玩的是榴弹枪，有麻醉的，毒药的，爆炸的弹药等， 与系列不同的是，玩家任务是作为一名刺客去刺杀刺客兄弟会的各种成员，讲述了北美刺客受到主角背叛遭受重创的剧情。
+              缺点：一样是挡反信条，挡反一刀秒，“有趣”的BUG。推荐一波。
+            </div>
+          </div>
+          <div class="hot_apps">
+            <a class="app_img" href="#">
+              <img width="215" src="img/moster/5-4.jpg" alt="">
+              <span class="app_price">¥ 48</span>
+            </a>
+            <span class="recommend">推荐</span>
+            <div class="text">
+              趁打折时入手的联机合作佳作，和朋友必须玩的其中一款塔防游戏， 个人也比较喜欢。游戏是由虚幻4引擎打造，画面也相当不错，核心玩法主要是塔防， 游戏一共提供了四个职业可选，分别是“队长”“太空人”“特工”和“女工程师” ，每个职业都有自己独特的武器和塔防道具（其实貌似只有最后一把武器和塔防是角色独占的）。推荐~
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="connoisseur_items_idx">
+      <div class="focus"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="arrow left_3" style="top: 225px;">
+      <div></div>
+    </div>
+    <div class="arrow right_3" style="top: 225px;">
+      <div></div>
+    </div>
+  </div>
+
+  <div class="game_tabs">
+    <div class="inner_tabs">
+      <div class="inner_tabs_left">
+        <div class="left_col_row">
+          <div class="left_col_row_item ">
+            <div class="left_col_row_item_lnk focus">新品与热门商品</div>
+          </div>
+          <div class="left_col_row_item">
+            <div class="left_col_row_item_lnk ">热销商品</div>
+          </div>
+          <div class="left_col_row_item">
+            <div class="left_col_row_item_lnk">即将推出</div>
+          </div>
+          <div class="left_col_row_item">
+            <div class="left_col_row_item_lnk">优惠</div>
+          </div>
+        </div>
+        <div class="left_col_content">
+          <div class="left_col_content_items">
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-10%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 50</div>
+                  <div class="after_price">¥ 45</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">A Light in the Dark</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">独立</span>
+                    <span class="top_tag">,暴力</span>
+                    <span class="top_tag">,血腥</span>
+                    <span class="top_tag">,休闲</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/2-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-11%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 35</div>
+                  <div class="after_price">¥ 31</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Melody of Iris-虹色旋律-(Full Color ver.)</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+
+                  <div class="tab_tag">
+                    <span class="top_tag">冒险</span>
+                    <span class="top_tag">,独立</span>
+                    <span class="top_tag">,模拟</span>
+                    <span class="top_tag">,休闲</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/3-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 135</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Wreckfest</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">竞速</span>
+                    <span class="top_tag">,毁灭</span>
+                    <span class="top_tag">,模拟</span>
+                    <span class="top_tag">,物理 </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/4-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-11%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 103</div>
+                  <div class="after_price">¥ 92</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Bus Simulator 18</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">模拟</span>
+                    <span class="top_tag">,单人</span>
+                    <span class="top_tag">,驾驶</span>
+                    <span class="top_tag">,多人</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/5-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-10%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 48</div>
+                  <div class="after_price">¥ 43</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Lust for Darkness</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag"> 色情内容 </span>
+                    <span class="top_tag">,裸露</span>
+                    <span class="top_tag">,恐怖</span>
+                    <span class="top_tag">,冒险</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!--5-->
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/6-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 150</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Jurassic World Evolution</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">恐龙</span>
+                    <span class="top_tag">,建造</span>
+                    <span class="top_tag">,模拟</span>
+                    <span class="top_tag">,管理</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/7-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 22</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Totally Accurate Battlegrounds</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">多人</span>
+                    <span class="top_tag">,搞笑</span>
+                    <span class="top_tag">,动作</span>
+                    <span class="top_tag">,第一人称射击</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/8-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">- 21%</div>
+
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 58</div>
+
+                  <div class="after_price">¥ 46</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Vampyr</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">吸血鬼</span>
+                    <span class="top_tag">,角色扮演</span>
+                    <span class="top_tag">,动作</span>
+                    <span class="top_tag">,选择取向</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/9-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 75</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Football, Tactics & Glory</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">策略</span>
+                    <span class="top_tag">,体育</span>
+                    <span class="top_tag">,模拟</span>
+                    <span class="top_tag">,回合制</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/10-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">免费</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">关于我被小学女生绑架这件事</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">免费</span>
+                    <span class="top_tag">,休闲</span>
+                    <span class="top_tag">,独立</span>
+                    <span class="top_tag">,休闲</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="tab_see_more">
+              查看更多:
+              <a href="#">
+                <span>新品</span>
+              </a>
+            </div>
+
+          </div>
+          <div style="display: none;" class="left_col_content_items">
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/gameimg/4PUBG/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-32%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 98</div>
+                  <div class="after_price">¥ 67</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">PLAYERUNKNOWN'S BATTLEGROUNDS</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">生存</span>
+                    <span class="top_tag">,射击</span>
+                    <span class="top_tag">,多人</span>
+                    <span class="top_tag">,玩家对战</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/gameimg/ARK/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2"> -67%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 196</div>
+                  <div class="after_price">¥ 65</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">ARK: Survival Evolved</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <span class="platform_img steam"></span>
+
+                  <div class="tab_tag">
+                    <span class="top_tag">生存</span>
+                    <span class="top_tag">,开放世界</span>
+                    <span class="top_tag">,恐龙</span>
+                    <span class="top_tag">,多人</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/3-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2"> -67%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 190</div>
+                  <div class="after_price">¥ 62</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Dying Light</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <span class="platform_img steam"></span>
+
+                  <div class="tab_tag">
+                    <span class="top_tag">丧尸</span>
+                    <span class="top_tag">,生存</span>
+                    <span class="top_tag">,开放世界</span>
+                    <span class="top_tag">,跑酷 </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/gameimg/9GTA5/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-60%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 189</div>
+                  <div class="after_price">¥ 92</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Grand Theft Auto V</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">开放世界</span>
+                    <span class="top_tag">,动作</span>
+                    <span class="top_tag">,多人</span>
+                    <span class="top_tag">,第三人称视角</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/gameimg/Tom_Clancys_Ghost_Recon/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 248</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Tom Clancy's Ghost Recon® Wildlands</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag"> 开放世界 </span>
+                    <span class="top_tag">,射击</span>
+                    <span class="top_tag">,动作</span>
+                    <span class="top_tag">,合作</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!--5-->
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/gameimg/Frostpunk/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2"> -15%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 99</div>
+                  <div class="after_price">¥ 84 </div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Frostpunk</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">生存</span>
+                    <span class="top_tag">,城市营造</span>
+                    <span class="top_tag">,策略</span>
+                    <span class="top_tag">,建造</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/gameimg/Darkest Dungeon/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 22</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Darkest Dungeon®: The Color Of Madness</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <span class="platform_img steam"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">策略</span>
+                    <span class="top_tag">,独立</span>
+                    <span class="top_tag">,角色扮演</span>
+                    <span class="top_tag">,洛夫克拉夫特式</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/gameimg/Raft/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 208</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Raft</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">Early Access</span>
+                    <span class="top_tag">,生存</span>
+                    <span class="top_tag">,多人</span>
+                    <span class="top_tag">,工艺</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/gameimg/Life is Strange/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 58</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Life is Strange: Before the Storm</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">剧情丰富</span>
+                    <span class="top_tag">,选择取向</span>
+                    <span class="top_tag">,好评原声音乐</span>
+                    <span class="top_tag">,女主人翁</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img" style="height: 69px; overflow: hidden;">
+                <img width="184" src="img/gameimg/R6/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">¥ 68</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Tom Clancy's Rainbow Six® Siege</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">第一人称射击</span>
+                    <span class="top_tag">,多人</span>
+                    <span class="top_tag">,战术</span>
+                    <span class="top_tag">,动作</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="tab_see_more">
+              查看更多:
+              <a href="#">
+                <span>热销商品</span>
+              </a>
+              或
+              <a href="#">
+                <span>全球热销商品</span>
+              </a>
+            </div>
+          </div>
+          <div style="display: none;" class="left_col_content_items">
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/3Helpless Zombies/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price"></div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Helpless Zombies</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">休闲</span>
+                    <span class="top_tag">,独立</span>
+                    <span class="top_tag">,冒险</span>
+                    <span class="top_tag">,丧尸</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/2Don't Be Afraid/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price"></div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Don't Be Afraid</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+
+                  <div class="tab_tag">
+                    <span class="top_tag">暴力</span>
+                    <span class="top_tag">,独立</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/4Puzzles for smart Cats/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price"></div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Puzzles for smart Cats</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">休闲</span>
+                    <span class="top_tag">,独立</span>
+
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/7MIRAGE/1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price"> 免费开玩</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">MIRAGE</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img HTC"></span>
+                  <span class="platform_img VR"></span>
+
+                  <div class="tab_tag">
+                    <span class="top_tag">免费</span>
+                    <span class="top_tag">,休闲</span>
+                    <span class="top_tag">,模拟</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/8Break The Targets/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2"></div>
+                <div class="after_discount">
+                  <div class="orgin_price"></div>
+                  <div class="after_price"></div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Break The Targets</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag"> 策略 </span>
+                    <span class="top_tag">,动作</span>
+                    <span class="top_tag">,独立</span>
+                    <span class="top_tag">,平台</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!--5-->
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/9Ghoststory/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price"></div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Ghoststory</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">动作</span>
+                    <span class="top_tag">,冒险</span>
+                    <span class="top_tag">,独立</span>
+                    <span class="top_tag">,休闲</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/5噬元之主/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price"></div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">噬元之主</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">色轻内容</span>
+                    <span class="top_tag">,裸露</span>
+                    <span class="top_tag">,免费</span>
+                    <span class="top_tag">,角色扮演</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/10Gravity Well/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-15%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 32</div>
+                  <div class="after_price">¥ 27</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Gravity Well</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">动作</span>
+                    <span class="top_tag">,独立</span>
+                    <span class="top_tag">,解迷</span>
+                    <span class="top_tag">,平台解迷</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/6School of Horror/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price"></div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">School of Horror</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+
+                  <div class="tab_tag">
+                    <span class="top_tag">动作</span>
+                    <span class="top_tag">,冒险</span>
+                    <span class="top_tag">,独立</span>
+
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col3/1Jetpack Dog - OST/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+
+                <div class="after_discount">
+
+                  <div class="after_price">免费</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Jetpack Dog - OST</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">休闲</span>
+
+                    <span class="top_tag">,独立</span>
+
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="tab_see_more">
+              查看更多:
+              <a href="#">
+                <span>即将推出</span>
+              </a>
+            </div>
+          </div>
+          <div style="display: none;" class="left_col_content_items">
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/1/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-30%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 160</div>
+                  <div class="after_price">¥ 118</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Railway Empire</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">策略</span>
+                    <span class="top_tag">,模拟</span>
+                    <span class="top_tag">,管理</span>
+                    <span class="top_tag">,火车</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/2/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-11%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 35</div>
+                  <div class="after_price">¥ 31</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">ASTRONEER</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+
+                  <div class="tab_tag">
+                    <span class="top_tag">开放世界</span>
+                    <span class="top_tag">,生存</span>
+                    <span class="top_tag">,多人</span>
+                    <span class="top_tag">,太空</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/3/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-21%</div>
+                <div class="after_discount">
+
+                  <div class="orgin_price">¥ 68</div>
+                  <div class="after_price">¥ 54</div>
+
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Dragon's Dogma: Dark Arisen</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">角色扮演</span>
+                    <span class="top_tag">,开放世界</span>
+                    <span class="top_tag">,自创角色</span>
+                    <span class="top_tag">,冒险 </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/4/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-60%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 88</div>
+                  <div class="after_price">¥ 45</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Dead by Daylight</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">恐怖</span>
+                    <span class="top_tag">,生存恐怖</span>
+                    <span class="top_tag">,多人</span>
+                    <span class="top_tag">,合作</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/5/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">-50%</div>
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 122</div>
+                  <div class="after_price">¥ 61</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">ARK: Survival Evolved Season Pass</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag"> 生存 </span>
+                    <span class="top_tag">,冒险</span>
+                    <span class="top_tag">,恐龙</span>
+                    <span class="top_tag">,多人在线</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!--5-->
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/6/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">- 71%</div>
+
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 78</div>
+
+                  <div class="after_price">¥ 23</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Darkest Dungeon®</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">回合制战斗</span>
+                    <span class="top_tag">,角色扮演</span>
+                    <span class="top_tag">,黑暗奇幻</span>
+                    <span class="top_tag">,迷宫探索</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/7/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">- 15%</div>
+
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 99</div>
+
+                  <div class="after_price">¥ 84</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Totally Accurate Battlegrounds</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">生存</span>
+                    <span class="top_tag">,城市营造</span>
+                    <span class="top_tag">,策略</span>
+                    <span class="top_tag">,建造</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/8/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">- 20%</div>
+
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 80</div>
+
+                  <div class="after_price">¥ 64</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Subnautica</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">生存</span>
+                    <span class="top_tag">,开放世界</span>
+                    <span class="top_tag">,探索</span>
+                    <span class="top_tag">,水底</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/9/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">- 50%</div>
+
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 24</div>
+
+                  <div class="after_price">¥ 12</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Don't Starve Together</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">生存</span>
+                    <span class="top_tag">,多人</span>
+                    <span class="top_tag">,合作</span>
+                    <span class="top_tag">,开放世界</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="left_col_content_item" href="#">
+              <div class="item_img">
+                <img src="img/tabs/col4/10/1-1.jpg" alt="">
+              </div>
+              <div class="item_price">
+                <div class="discount_pct2">- 21%</div>
+
+                <div class="after_discount">
+                  <div class="orgin_price">¥ 58</div>
+
+                  <div class="after_price">¥ 46</div>
+                </div>
+              </div>
+              <div class="tab_item_content">
+                <div class="tab_item_name">Oxygen Not Included</div>
+                <div class="tab_item_details">
+                  <span class="platform_img win"></span>
+                  <span class="platform_img mac"></span>
+                  <div class="tab_tag">
+                    <span class="top_tag">生存</span>
+                    <span class="top_tag">,建造</span>
+                    <span class="top_tag">,独立</span>
+                    <span class="top_tag">,休闲</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="tab_see_more">
+              查看更多:
+              <a href="#">
+                <span>优惠</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner_tabs_right">
+        <div class="inner_tabs_right_items">
+          <div class="inner_tabs_right_item">
+            <h2>A Light in the Dark</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(113)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">开放世界</a>
+              <a href="#">休闲</a>
+              <a href="#">血腥</a>
+              <a href="#">休闲</a>
+              <a href="#">视觉小说</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Melody of Iris-虹色旋律-(Full Color ver.)</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">好评</div>
+              <span class="evaluate_count">(21)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">独立</a>
+              <a href="#">模拟</a>
+              <a href="#">冒险</a>
+              <a href="#">休闲</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/2-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/2-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/2-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/2-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>A Light in the Dark</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(113)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">竞速</a>
+              <a href="#">毁灭</a>
+              <a href="#">物理</a>
+              <a href="#">模拟</a>
+              <a href="#">驾驶</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/3-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/3-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/3-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/3-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Bus Simulator 18</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate mixed">褒贬不一</div>
+              <span class="evaluate_count">(573)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">模拟</a>
+              <a href="#">多人</a>
+              <a href="#">驾驶</a>
+              <a href="#">单人</a>
+              <a href="#">拟真</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/4-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/4-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/4-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/4-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Lust for Darkness</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(279)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">色情内容</a>
+              <a href="#">裸露</a>
+              <a href="#">恐怖</a>
+              <a href="#">冒险</a>
+              <a href="#">血腥</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/5-2.png" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/5-2.png" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/5-2.png" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/5-2.png" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Jurassic World Evolution</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(5,368)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">恐龙</a>
+              <a href="#">建造</a>
+              <a href="#">模拟</a>
+              <a href="#">管理</a>
+              <a href="#">策略</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/6-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/6-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/6-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/6-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Totally Accurate Battlegrounds</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(746)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">多人</a>
+              <a href="#">动作</a>
+              <a href="#">搞笑</a>
+              <a href="#">第一人称</a>
+              <a href="#">网络爆红</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/7-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/7-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/7-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/7-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Vampyr</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(2,368)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">吸血鬼</a>
+              <a href="#">角色扮演</a>
+              <a href="#">动作</a>
+              <a href="#">选择取向</a>
+              <a href="#">单人</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/8-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/8-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/8-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/8-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Football, Tactics & Glory</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(1,113)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">策略</a>
+              <a href="#">体育</a>
+              <a href="#">模拟</a>
+              <a href="#">回合制</a>
+              <a href="#">管理</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/9-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/9-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/9-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/9-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>关于我被小学女生绑架这件事</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(1,242)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">免费</a>
+              <a href="#">休闲</a>
+              <a href="#">独立</a>
+              <a href="#">冒险</a>
+              <a href="#">色情内容</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/10-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/10-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/10-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/10-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none;" class="inner_tabs_right_item">
+            <h2>PLAYERUNKNOWN'S BATTLEGROUNDS</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate mixed">褒贬不一</div>
+              <span class="evaluate_count">(676,185)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">开放世界</a>
+              <a href="#">动作</a>
+              <a href="#">多人</a>
+              <a href="#">玩家对战</a>
+              <a href="#">第三人称</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/4PUBG/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/4PUBG/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/4PUBG/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/4PUBG/5.jpg" alt=""> </div>
+          </div>
+          <!--2-1-->
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>ARK: Survival Evolved</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate mixed">褒贬不一</div>
+              <span class="evaluate_count">(334,873)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">开放世界</a>
+              <a href="#">动作</a>
+              <a href="#">多人</a>
+              <a href="#">第三人称视角</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/ARK/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/ARK/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/ARK/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/ARK/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2> Dying Light </h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(44,437)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">丧尸</a>
+              <a href="#">生存</a>
+              <a href="#">开放世界</a>
+              <a href="#">跑酷</a>
+              <a href="#">合作</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/deadinglight/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/deadinglight/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/deadinglight/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/deadinglight/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Grand Theft Auto V</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate mixed">褒贬不一</div>
+              <span class="evaluate_count">(334,873)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">开放世界</a>
+              <a href="#">动作</a>
+              <a href="#">多人</a>
+              <a href="#">第三人称视角</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/9GTA5/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/9GTA5/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/9GTA5/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/9GTA5/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Tom Clancy's Ghost Recon® Wildlands</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(21,236)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">开放世界</a>
+              <a href="#">射击</a>
+              <a href="#">动作</a>
+              <a href="#">合作</a>
+              <a href="#">多人</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Tom_Clancys_Ghost_Recon/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Tom_Clancys_Ghost_Recon/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Tom_Clancys_Ghost_Recon/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Frostpunk</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(10,370)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">生存</a>
+              <a href="#">城市营造</a>
+              <a href="#">策略</a>
+              <a href="#">建造</a>
+              <a href="#">末日</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Frostpunk/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Frostpunk/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Frostpunk/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Frostpunk/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Darkest Dungeon®: The Color Of Madness</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate mixed">褒贬不一</div>
+              <span class="evaluate_count">(176)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">策略</a>
+              <a href="#">独立</a>
+              <a href="#">角色扮演</a>
+              <a href="#">洛夫克拉夫特式</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Darkest Dungeon/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Darkest Dungeon/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Darkest Dungeon/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Darkest Dungeon/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Raft</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(5,861)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">Early Access</a>
+              <a href="#">生存</a>
+              <a href="#">多人</a>
+              <a href="#">工艺</a>
+              <a href="#">冒险</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Raft/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Raft/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Raft/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Raft/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Life is Strange: Before the Storm</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(16,135)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">剧情丰富</a>
+              <a href="#">选择取向</a>
+              <a href="#">好评原声音乐</a>
+              <a href="#">女主人翁</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Life is Strange/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Life is Strange/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Life is Strange/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/Life is Strange/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Tom Clancy's Rainbow Six® Siege</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(164,579)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">第一人称</a>
+              <a href="#">多人</a>
+              <a href="#">战术</a>
+              <a href="#">动作</a>
+              <a href="#">射击</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/R6/2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/R6/3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/R6/4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/gameimg/R6/5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none;" class="inner_tabs_right_item">
+            <h2>Helpless Zombies</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none">暂无评测</div>
+
+            </div>
+            <div class="right_col_tags">
+              <a href="#">休闲</a>
+              <a href="#">独立</a>
+              <a href="#">冒险</a>
+              <a href="#">单人</a>
+              <a href="#">丧尸</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/3Helpless Zombies/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/3Helpless Zombies/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/3Helpless Zombies/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/3Helpless Zombies/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Don't Be Afraid</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none">暂无评测</div>
+
+            </div>
+            <div class="right_col_tags">
+              <a href="#">独立</a>
+              <a href="#">暴力</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/2Don't Be Afraid/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/2Don't Be Afraid/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/2Don't Be Afraid/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/2Don't Be Afraid/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Puzzles for smart Cats</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none">暂无评测</div>
+
+            </div>
+            <div class="right_col_tags">
+              <a href="#">休闲</a>
+              <a href="#">独立</a>
+
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/4Puzzles for smart Cats/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/4Puzzles for smart Cats/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/4Puzzles for smart Cats/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/4Puzzles for smart Cats/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>MIRAGE</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none">暂无评测</div>
+
+            </div>
+            <div class="right_col_tags">
+              <a href="#">免费</a>
+              <a href="#">平台</a>
+              <a href="#">独立</a>
+              <a href="#">VR</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/7MIRAGE/1-1.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/7MIRAGE/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/7MIRAGE/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/7MIRAGE/1-4.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Lust for Darkness</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none">暂无评测</div>
+              <span class="evaluate_count"></span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">策略</a>
+              <a href="#">动作</a>
+              <a href="#">独立</a>
+              <a href="#">平台</a>
+              <a href="#">限时</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/8Break The Targets/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/8Break The Targets/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/8Break The Targets/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/8Break The Targets/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Jurassic World Evolution</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none">暂无评测</div>
+              <span class="evaluate_count"></span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">动作</a>
+              <a href="#">冒险</a>
+              <a href="#">独立</a>
+              <a href="#">休闲</a>
+
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/9Ghoststory/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/9Ghoststory/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/9Ghoststory/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/9Ghoststory/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Totally Accurate Battlegrounds</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none">暂无评测</div>
+              <span class="evaluate_count"></span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">色情内容</a>
+              <a href="#">动作</a>
+              <a href="#">裸露</a>
+              <a href="#">免费</a>
+              <a href="#">角色扮演</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/5噬元之主/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/5噬元之主/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/5噬元之主/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/5噬元之主/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Gravity Well</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(2,368)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">动作</a>
+              <a href="#">解迷</a>
+              <a href="#">独立</a>
+              <a href="#">平台解谜</a>
+              <a href="#">科幻</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/10Gravity Well/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/10Gravity Well/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/10Gravity Well/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/10Gravity Well/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Football, Tactics & Glory</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none ">暂无评价</div>
+              <span class="evaluate_count"></span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">动作</a>
+              <a href="#">冒险</a>
+              <a href="#">独立</a>
+
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/6School of Horror/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/6School of Horror/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/6School of Horror/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/6School of Horror/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Jetpack Dog - OST</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate none">暂无评价</div>
+              <span class="evaluate_count"></span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">免费</a>
+              <a href="#">休闲</a>
+              <a href="#">独立</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col3/1Jetpack Dog - OST/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/10.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/10.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/10.jpg" alt=""> </div>
+          </div>
+          <div style="display: none;" class="inner_tabs_right_item">
+            <h2>Railway Empire</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(1,625)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">策略</a>
+              <a href="#">模拟</a>
+              <a href="#">管理</a>
+              <a href="#">火车</a>
+              <a href="#">建造</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/1/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/1/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/1/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/1/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>ASTRONEER</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(22,365)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">开放世界</a>
+              <a href="#">生存</a>
+              <a href="#">多人</a>
+              <a href="#">太空</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/2/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/2/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/2/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/2/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Dragon's Dogma: Dark Arisen</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(113)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">开放世界</a>
+              <a href="#">角色扮演</a>
+              <a href="#">自创角色</a>
+              <a href="#">冒险</a>
+              <a href="#">动作</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/3/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/3/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/3/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/3/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Dead by Daylight</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate mixed">特别好评</div>
+              <span class="evaluate_count">(8,879)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">恐怖</a>
+              <a href="#">生存恐怖</a>
+              <a href="#">多人</a>
+              <a href="#">合作</a>
+              <a href="#">生存</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/4/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/4/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/4/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/4/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Lust for Darkness</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(279)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">生存</a>
+              <a href="#">冒险</a>
+              <a href="#">恐龙</a>
+              <a href="#">开放世界</a>
+              <a href="#">血腥</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/5/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/5/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/5/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/5/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Darkest Dungeon®</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(5,368)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">回合制战斗</a>
+              <a href="#">角色扮演</a>
+              <a href="#">黑暗奇幻</a>
+              <a href="#">迷宫探索</a>
+
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/6/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/6/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/6/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/6/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Totally Accurate Battlegrounds</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(746)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">生存</a>
+              <a href="#">城市营造</a>
+              <a href="#">策略</a>
+              <a href="#">建造</a>
+              <a href="#">末日</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/7/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/7/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/7/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/7/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Subnautica</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(2,368)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">生存</a>
+              <a href="#">开放世界</a>
+              <a href="#">探索</a>
+              <a href="#">水底</a>
+              <a href="#">工艺</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/8/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/8/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/8/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/8/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Don't Starve Together</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(1,113)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">生存</a>
+              <a href="#">多人</a>
+              <a href="#">合作</a>
+              <a href="#">开放世界</a>
+              <a href="#">冒险</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/9/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/9/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/9/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/9/1-5.jpg" alt=""> </div>
+          </div>
+          <div style="display: none" class="inner_tabs_right_item">
+            <h2>Oxygen Not Included</h2>
+            <div class="user_evaluate">
+              <div class="title">总体用户评测:</div>
+              <div class="evaluate positive">特别好评</div>
+              <span class="evaluate_count">(1,242)</span>
+            </div>
+            <div class="right_col_tags">
+              <a href="#">生存</a>
+              <a href="#">休闲</a>
+              <a href="#">独立</a>
+              <a href="#">冒险</a>
+              <a href="#">建造</a>
+            </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/10/1-2.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/10/1-3.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/10/1-4.jpg" alt=""> </div>
+            <div class="right_col_img">
+              <img width="258" src="img/tabs/col4/10/1-5.jpg" alt=""> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bgc">
+    <div class="bottom_content">
+      <div class="bottom_inner_content">
+        <h2 class="winter">更多精彩内容</h2>
+        <h4 class="with_btn">
+          按您的偏好过滤
+          <a class="edit_hobby" href="#">
+            <span>编辑您的偏好</span>
+          </a>
+        </h4>
+        <div class="bottom_inner_content_target">
+          <div class="top_col">
+            <div class="big_box">
+              <a href="#">
+                <img src="img/bottom/1.jpg" alt="">
+              </a>
+              <div class="bottom_discount_pirce_big">
+                <div class="discount_pct3">- 38%</div>
+                <div class="discount_pirce2">
+                  <div class="orgin_price">¥ 52</div>
+                  <div class="after_price">¥ 32</div>
+                </div>
+              </div>
+            </div>
+            <div class="right_box">
+              <a href="#">
+                <img width="302" src="img/bottom/2.jpg" alt="">
+                <div class="bottom_discount_pirce">
+                  <div class="discount_pct4">- 50%</div>
+                  <span class="orgin_price">¥ 36</span>&nbsp;
+                  <span class="after_price">¥ 21</span>
+                </div>
+              </a>
+              <a href="#">
+                <img width="302" src="img/bottom/3.jpg" alt="">
+                <div class="bottom_discount_pirce">
+                  <div class="discount_pct4">- 30%</div>
+                  <span class="orgin_price">¥ 60</span>&nbsp;
+                  <span class="after_price">¥ 42</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+          <div class="middle_col">
+            <a href="#">
+              <img width="302" src="img/bottom/4.jpg" alt="">
+              <div class="bottom_discount_pirce">
+                <div class="discount_pct4">- 50%</div>
+                <span class="orgin_price">¥ 70</span>&nbsp;
+                <span class="after_price">¥ 35</span>
+              </div>
+            </a>
+            <a href="#">
+              <img width="302" src="img/bottom/5.jpg" alt="">
+              <div class="bottom_discount_pirce">
+                <div class="discount_pct4">- 50%</div>
+                <span class="orgin_price">¥ 52</span>
+                <span class="after_price">¥ 32</span>
+              </div>
+            </a>
+            <a href="#">
+              <img width="302" src="img/bottom/6.jpg" alt="">
+              <div class="bottom_discount_pirce">
+                <div class="discount_pct4">- 50%</div>
+                <span class="orgin_price">¥ 79</span>&nbsp;
+                <span class="after_price">¥ 35</span>
+              </div>
+            </a>
+          </div>
+          <div class="bottom_col">
+            <div class="right_box">
+              <a href="#" style="display: block; width: 300px;">
+                <img width="302" src="img/bottom/9.jpg" alt="">
+                <div class="bottom_discount_pirce">
+                  <div class="discount_pct4">- 22%</div>
+                  <span class="orgin_price">¥ 36</span>
+                  <span class="after_price">¥ 24</span>
+                </div>
+              </a>
+              <a href="#" style="display: block; width: 300px;">
+                <img width="302" src="img/bottom/8.jpg" alt="">
+                <div class="bottom_discount_pirce">
+                  <div class="discount_pct4">- 50% ~ 75%</div>
+                </div>
+              </a>
+
+            </div>
+            <div class="big_box" style="float: right;">
+              <a href="#">
+                <img width="616" src="img/bottom/7.jpg" alt="">
+              </a>
+              <div class="bottom_discount_pirce_big">
+                <div class="discount_pct3">- 50%</div>
+                <div class="discount_pirce2">
+                  <div class="orgin_price">¥ 204</div>
+                  <div class="after_price">¥ 102</div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="low_price">
+    <h2 class="winter">
+      低于 ¥ 40
+      <span class="winter_right">
+        <a href="#">
+          <span>低于 ¥ 40</span>
+        </a>
+        <a href="#">
+          <span>低于 ¥ 20</span>
+        </a>
+      </span>
+    </h2>
+    <div class="low_price_items">
+      <a href="#" class="low_price_item">
+        <div class="low_price_img">
+          <img width="229" src="img/low/1.jpg" alt="">
+        </div>
+        <div class="discount_block_inline">
+          <div class="discount_pct5"> - 84%</div>
+          <div class="discount_pirce3">
+            <span class="orgin_price"> ¥ 199</span>
+            <span class="after_price" style="font-size: 11px;"> ¥ 31</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="low_price_item">
+        <div class="low_price_img">
+          <img width="229" src="img/low/2.jpg" alt="">
+        </div>
+        <div class="discount_block_inline">
+          <div class="discount_pct5"> - 38%</div>
+          <div class="discount_pirce3">
+            <span class="orgin_price"> ¥ 52</span>&nbsp;
+            <span class="after_price" style="font-size: 11px;">¥ 32</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="low_price_item">
+        <div class="low_price_img">
+          <img width="229" src="img/low/3.jpg" alt="">
+        </div>
+        <div class="discount_block_inline">
+          <div class="discount_pct5"> - 21%</div>
+          <div class="discount_pirce3">
+            <span class="orgin_price"> ¥ 48</span>&nbsp;
+            <span class="after_price" style="font-size: 11px;">¥ 38</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="low_price_item">
+        <div class="low_price_img">
+          <img width="229" src="img/low/4.jpg" alt="">
+        </div>
+        <div class="discount_block_inline">
+          <div class="discount_pct5"> - 50%</div>
+          <div class="discount_pirce3">
+            <span class="orgin_price"> ¥ 118</span>&nbsp;
+            <span class="after_price" style="font-size: 11px;">¥ 24</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="low_price_item">
+        <div class="low_price_img">
+          <img width="229" src="img/low/5.jpg" alt="">
+        </div>
+        <div class="discount_block_inline">
+          <div class="discount_pct5"> - 76%</div>
+          <div class="discount_pirce3">
+            <span class="orgin_price"> ¥ 103</span>&nbsp;
+            <span class="after_price" style="font-size: 11px;">¥ 25</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="low_price_item">
+        <div class="low_price_img">
+          <img width="229" src="img/low/6.jpg" alt="">
+        </div>
+        <div class="discount_block_inline">
+          <div class="discount_pct5"> - 70%</div>
+          <div class="discount_pirce3">
+            <span class="orgin_price"> ¥ 118</span>&nbsp;
+            <span class="after_price" style="font-size: 11px;">¥ 35</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="low_price_item">
+        <div class="low_price_img">
+          <img width="229" src="img/low/7.jpg" alt="">
+        </div>
+        <div class="discount_block_inline">
+          <div class="discount_pct5"> - 50%</div>
+          <div class="discount_pirce3">
+            <span class="orgin_price"> ¥ 68</span>&nbsp;
+            <span class="after_price" style="font-size: 11px;">¥ 34</span>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="low_price_item">
+        <div class="low_price_img">
+          <img width="229" src="img/low/8.jpg" alt="">
+        </div>
+        <div class="discount_block_inline">
+          <div class="discount_pct5"> - 67%</div>
+          <div class="discount_pirce3">
+            <span class="orgin_price"> ¥ 88</span>&nbsp;
+            <span class="after_price" style="font-size: 11px;">¥ 29</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  <div class="tail">
+    <div class="home_page_content">
+      <div class="more_content_title">
+        <span>正在寻找推荐?</span>
+      </div>
+    </div>
+    <div class="home_page_content">
+      <div class="home_page_login">
+        <p>登录查看个性化推荐</p>
+        <br>
+        <a href="#" class="login_btn">
+          <span>登录</span>
+        </a>
+        <br>
+        <br> 或者
+        <a class="register" href="#">注册</a> 并免费加入 Steam
+      </div>
+    </div>
+  </div>
+  <div class="small_footer">
+    <div class="footer_content">
+      <div class="rule"></div>
+      <div class="footer_logo2">
+        <img src="img/footer_logo2.png" alt="">
+      </div>
+      <div class="footer_logo1">
+        <img src="img/footer_logo1.png" alt="">
+      </div>
+      <div class="footer_text">
+        <div>©2018 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。</div>
+        <div>所有的价格均已包含增值税（如适用）。
+          <a class="footer_lnk" href="#">隐私政策</a> |
+          <a class="footer_lnk" href="#">法律信息</a> |
+          <a class="footer_lnk" href="#"> Steam 订户协议 </a> |
+          <a class="footer_lnk" href="#">退款</a>
+        </div>
+      </div>
+      <div class="rule"></div>
+      <div class="valve_lnks">
+        <a class="valve_lnk" href="">关于 Valve</a> |
+        <a class="valve_lnk" href="">Steamworks</a> |
+        <a class="valve_lnk" href="">工作</a> |
+        <a class="valve_lnk" href="">Steam 分销</a> |
+        <a class="valve_lnk" href="">礼物卡</a> |
+        <a class="valve_lnk" href=""> <img src="img/ico_facebook.gif" alt=""> Steam </a> |
+        <a class="valve_lnk" href=""> <img src="img/ico_twitter.gif" alt="">@steam_games</a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!---->
+  <div class="global_hover">
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">Tom Clancy's Ghost Recon® Wildlands</h4>
+        <div class="publish"> 发行于: 2017年12月21日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data">褒贬不一</span>
+            (670,483 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">免费</div>
+            <div class="app_tag">动作</div>
+            <div class="app_tag">合作</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">第三人称射击</div>
+            <div class="app_tag">科幻</div>
+            <div class="app_tag">忍者</div>
+            <div class="app_tag">射击</div>
+            <div class="app_tag">跑酷</div>
+            <div class="app_tag">太空</div>
+            <div class="app_tag">在线合作</div>
+            <div class="app_tag">未来</div>
+            <div class="app_tag">第三人称视角</div>
+            <div class="app_tag">大型多人在线</div>
+            <div class="app_tag">玩家合作</div>
+            <div class="app_tag">角色扮演</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">砍杀</div>
+            <div class="app_tag">第一人称射击</div>
+            <div class="app_tag">赛博朋克</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">Tom Clancy's Rainbow Six® Siege</h4>
+        <div class="publish"> 发行于: 2017年12月21日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data positive">特别好评</span>
+            (168,880 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+
+            <div class="app_tag">第一人称射击</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">战术</div>
+            <div class="app_tag">动作</div>
+            <div class="app_tag">射击</div>
+            <div class="app_tag">团队导向</div>
+            <div class="app_tag">第一人称视角</div>
+            <div class="app_tag">合作</div>
+            <div class="app_tag">策略</div>
+            <div class="app_tag">拟真</div>
+            <div class="app_tag">在线合作</div>
+            <div class="app_tag">竞技</div>
+            <div class="app_tag">毁灭</div>
+            <div class="app_tag">氛围</div>
+            <div class="app_tag">物理</div>
+            <div class="app_tag">恐怖</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">大型多人在线</div>
+            <div class="app_tag">模拟</div>
+            <div class="app_tag">休闲</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">ARK: Survival Evolved Season Pass</h4>
+        <div class="publish"> 发行于: 2015年12月2日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data positive">特别好评</span>
+            (63,884 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">第三人称视角</div>
+            <div class="app_tag">大型多人在线</div>
+            <div class="app_tag">玩家合作</div>
+            <div class="app_tag">角色扮演</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">砍杀</div>
+            <div class="app_tag">第一人称射击</div>
+            <div class="app_tag">赛博朋克</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">PLAYERUNKNOWN'S BATTLEGROUNDS</h4>
+        <div class="publish"> 发行于: 2015年12月21日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data">褒贬不一</span>
+            (700,483 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">
+              生存</div>
+            <div class="app_tag">射击</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">玩家对战</div>
+            <div class="app_tag">第一人称射击</div>
+            <div class="app_tag">第三人称射击</div>
+            <div class="app_tag">动作</div>
+            <div class="app_tag">在线合作</div>
+            <div class="app_tag">战术</div>
+            <div class="app_tag">合作</div>
+            <div class="app_tag">第一人称视角</div>
+            <div class="app_tag">暴力</div>
+            <div class="app_tag">策略</div>
+            <div class="app_tag">第三人称视角</div>
+            <div class="app_tag">竞技</div>
+            <div class="app_tag">团队导向</div>
+            <div class="app_tag">困难</div>
+            <div class="app_tag">潜行</div>
+            <div class="app_tag">模拟</div>
+            <div class="app_tag">独立</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">Dead by Daylight</h4>
+        <div class="publish"> 2016年6月14日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data positive">多半好评</span>
+            (85,325 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">恐怖</div>
+            <div class="app_tag">血腥</div>
+            <div class="app_tag">合作</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">第三人称</div>
+            <div class="app_tag">科幻</div>
+            <div class="app_tag">忍者</div>
+            <div class="app_tag">射击</div>
+            <div class="app_tag">跑酷</div>
+            <div class="app_tag">太空</div>
+            <div class="app_tag">在线合作</div>
+            <div class="app_tag">未来</div>
+            <div class="app_tag">第三人称视角</div>
+            <div class="app_tag">大型多人在线</div>
+            <div class="app_tag">玩家合作</div>
+            <div class="app_tag">角色扮演</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">砍杀</div>
+            <div class="app_tag">第一人称射击</div>
+            <div class="app_tag">赛博朋克</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">Wreckfest</h4>
+        <div class="publish"> 发行于: 2018年6月15日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data positive">特别好评</span>
+            (8,655 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">
+              竞速</div>
+            <div class="app_tag">毁灭</div>
+            <div class="app_tag">模拟</div>
+            <div class="app_tag">物理</div>
+            <div class="app_tag">驾驶</div>
+            <div class="app_tag">动作</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">独立</div>
+            <div class="app_tag">体育</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">搞笑</div>
+            <div class="app_tag">拟真</div>
+            <div class="app_tag">街机</div>
+            <div class="app_tag">沙盒</div>
+            <div class="app_tag">开放世界</div>
+            <div class="app_tag">第三人称视角</div>
+            <div class="app_tag">冒险</div>
+            <div class="app_tag">氛围</div>
+            <div class="app_tag">合作</div>
+            <div class="app_tag">恶魔</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">NBA 2K18</h4>
+        <div class="publish"> 发行于: 2017年9月14日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data">褒贬不一</span>
+            (204,082 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">
+              体育</div>
+            <div class="app_tag">篮球</div>
+            <div class="app_tag">模拟</div>
+            <div class="app_tag">赌博</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">拟真</div>
+            <div class="app_tag">免费</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">Football Manager 2018</h4>
+        <div class="publish"> 发行于: 2017年9月21日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data positive">多半好评</span>
+            (561,232 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">
+              体育</div>
+            <div class="app_tag">足球</div>
+            <div class="app_tag">模拟</div>
+            <div class="app_tag">赌博</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">拟真</div>
+            <div class="app_tag">免费</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">Grand Theft Auto V</h4>
+        <div class="publish"> 发行于: 2015年4月5日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data">褒贬不一</span>
+            (334,581 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">
+              开放世界</div>
+            <div class="app_tag">动作</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">第一人称视角</div>
+            <div class="app_tag">第三人称视角</div>
+            <div class="app_tag">犯罪</div>
+            <div class="app_tag">冒险</div>
+            <div class="app_tag">射击</div>
+            <div class="app_tag">第三人称射击</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">竞速</div>
+            <div class="app_tag">成人</div>
+            <div class="app_tag">氛围</div>
+            <div class="app_tag">沙盒</div>
+            <div class="app_tag">合作</div>
+            <div class="app_tag">搞笑</div>
+            <div class="app_tag">好评原声音乐</div>
+            <div class="app_tag">欢乐</div>
+            <div class="app_tag">可模组化</div>
+            <div class="app_tag">角色扮演</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">The Evil Within</h4>
+        <div class="publish"> 发行于: 2018年6月15日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+          <div class="user_appraise">
+            <div class="user_appraise_tit">总体用户评测:</div>
+            <span class="game_appraise_data">褒贬不一</span>
+            (7,483 篇评测)
+          </div>
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">免费</div>
+            <div class="app_tag">动作</div>
+            <div class="app_tag">合作</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">第三人称射击</div>
+            <div class="app_tag">科幻</div>
+            <div class="app_tag">忍者</div>
+            <div class="app_tag">射击</div>
+            <div class="app_tag">跑酷</div>
+            <div class="app_tag">太空</div>
+            <div class="app_tag">在线合作</div>
+            <div class="app_tag">未来</div>
+            <div class="app_tag">第三人称视角</div>
+            <div class="app_tag">大型多人在线</div>
+            <div class="app_tag">玩家合作</div>
+            <div class="app_tag">角色扮演</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">砍杀</div>
+            <div class="app_tag">第一人称射击</div>
+            <div class="app_tag">赛博朋克</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div style="display: none;" class="hover_box">
+      <div class="left_arrow"></div>
+      <div class="box_item">
+        <h4 class="tit">Insurgency: Sandstorm</h4>
+        <div class="publish"> 发行于: 2017年12月21日 </div>
+        <div class="hover_screenshots">
+          <img src="img/gameimg/Tom_Clancys_Ghost_Recon/2.jpg" width="274" alt="">
+        </div>
+        <div class="hover_body">
+        </div>
+        <div class="hover_body">
+          用户标签:
+          <div class="user_tag">
+            <div class="app_tag">动作</div>
+            <div class="app_tag">合作</div>
+            <div class="app_tag">多人</div>
+            <div class="app_tag">第三人称射击</div>
+            <div class="app_tag">科幻</div>
+            <div class="app_tag">忍者</div>
+            <div class="app_tag">射击</div>
+            <div class="app_tag">跑酷</div>
+            <div class="app_tag">太空</div>
+            <div class="app_tag">在线合作</div>
+            <div class="app_tag">未来</div>
+            <div class="app_tag">第三人称视角</div>
+            <div class="app_tag">大型多人在线</div>
+            <div class="app_tag">玩家合作</div>
+            <div class="app_tag">角色扮演</div>
+            <div class="app_tag">单人</div>
+            <div class="app_tag">砍杀</div>
+            <div class="app_tag">第一人称射击</div>
+            <div class="app_tag">赛博朋克</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
